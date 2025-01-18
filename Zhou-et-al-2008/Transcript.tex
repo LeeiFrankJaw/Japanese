@@ -1,6 +1,6 @@
-\documentclass[a4paper]{ltjtarticle}
+\documentclass[a5j]{ltjtarticle}
 
-\newcommand*{\titleContent}{『新編日本語』の文字起こし}
+\newcommand*{\titleContent}{『\ruby{新|編}{しん|ぺん}日本語』の\ruby{文|字|起|こし}{も|じ|お|}}
 \newcommand*{\authorContent}{趙磊}
 
 \title{\titleContent}
@@ -10,6 +10,12 @@
 \ltjsetruby{stretch=101}
 
 \usepackage{setspace}
+\usepackage{enumitem}
+\newlist{dialogue}{itemize}{1}
+\setlist[dialogue]{label={},align=left,leftmargin=*,labelsep=\zw,nosep}
+\newcommand*{\Rospeaks}{\item[魯]}
+\newcommand*{\Lispeaks}{\item[李]}
+\newcommand*{\Kospeaks}{\item[顧]}
 
 \begin{document}
 \maketitle
@@ -18,13 +24,12 @@
 
 \subsection*{発音練習}
 
-\begin{doublespace}
-  \noindent
+\begin{onehalfspace}
   \ruby{会|う}{あ|}、
   \ruby{家}{いえ}、
   \ruby{上}{うえ}、
   \ruby{絵}{え}、
-  \ruby{甥}{おい}
+  \ruby{甥}{おい}、
   \ruby{顔}{かお}、
   \ruby{聞|く}{き|}、
   \ruby{杭}{くい}、
@@ -49,7 +54,7 @@
   \ruby{人}{ひと}、
   \ruby{船}{ふね}、
   \ruby{下手}{へた}、
-  \ruby{\textgt{腰}}{こし}、
+  \ruby{\textgt{星}}{ほし}、
   \ruby{前}{まえ}、
   \ruby{耳}{みみ}、
   \ruby{昔}{むかし}、
@@ -58,10 +63,10 @@
   \ruby{山}{やま}、
   \ruby{雪}{ゆき}、
   \ruby{良|い}{よ|}、
-  \ruby{泣く}{なく}、
+  \ruby{\textgt{楽}}{\textgt{ら}く}、
   \ruby{理|解}{り|かい}、
   \ruby{留守}{るす}、
-  \ruby{歴|史}{\textgt{れき}|し}、
+  \ruby{歴|史}{れ\textgt{き}|し}、
   \ruby{六}{ろく}、
   \ruby{私}{わたし}、
   \ruby{悪|い}{わる|}、
@@ -80,7 +85,80 @@
   ハンカチ、
   ホテル、
   \ruby{レ|モン}{檸|檬}。
-\end{doublespace}
+\end{onehalfspace}
+
+\section*{第二課　はじめまして}
+
+\subsection*{濁音練習}
+
+\begin{onehalfspace}
+  \ruby{外|国}{がい|こく}、
+  \ruby{\textgt{技}|\textgt{師}}{\textgt{ぎ}|し}、
+  \ruby{\textgt{具}|\textgt{合}}{ぐ|あい}、
+  \ruby{元|気}{げん|き}、
+  \ruby{ご|飯}{|はん}、
+  \ruby{一|月}{いち|がつ}、
+  \ruby{\textgt{鍵}}{か\textgt{ぎ}}、
+  \ruby{\textgt{家}|\textgt{具}}{か|\textgt{ぐ}}、
+  \ruby{ひげ}{\textgt{髭}}、
+  \ruby{リン|ゴ}{林|檎}、
+  \ruby{座|席}{ざ|せき}、
+  \ruby{事|故}{じ|こ}、
+  \ruby{地|図}{ち|ず}、
+  ゼミ、
+  \ruby{俗|語}{ぞく|ご}、
+  \ruby{大|学}{だい|がく}、
+  \ruby{縮|む}{ちぢ|}、
+  \ruby{続|く}{つづ|}、
+  \ruby{電|話}{でん|わ}、
+  ドア、
+  \ruby{\textgt{場}|\textgt{合}}{ば|あい}、
+  ビザ、
+  \ruby{豚}{ぶた}、
+  \ruby{便|利}{べん|り}、
+  \ruby{僕}{ぼく}、
+  パンダ、
+  ピンク、
+  プラス、
+  ペン、
+  ポスト。
+\end{onehalfspace}
+
+\subsection*{前文}
+
+私は\ruby{魯}{ろ}です。あなたは\ruby{李}{り}さんです。あの人は\ruby{顧}{こ}さんです。私は日本語\ruby{科}{か}の一年です。李さんは日本語科の二年です。顧さんは日本語科の三年です。これは服です。それも服です。あれは本です。
+
+\subsection*{会話}
+
+\begin{dialogue}
+  \Lispeaks すみません、あなたは魯さんですか。
+  \Rospeaks はい、私は日本語科の一年の魯です。あなたはどなたですか。
+  \Lispeaks 私は日本語科の二年の李です。
+  \Rospeaks はじめまして。
+  \Lispeaks はじめまして。
+  \Rospeaks よろしくお願いします。
+  \Lispeaks よろしくお願いします。
+  \Rospeaks あの人はどなたですか。
+  \Lispeaks あの人は日本語科の三年の顧さんです。顧さん、こちらは魯さんです。
+  \Kospeaks はじめまして。
+  \Rospeaks はじめまして。
+  \Kospeaks よろしくお願いします。
+  \Rospeaks こちらこそ、よろしくお願いします。
+  \Kospeaks これはあなたの荷物ですか。
+  \Rospeaks はい、それは私の荷物です。
+  \Kospeaks これは何ですか。
+  \Rospeaks それは服です。
+  \Kospeaks それは何ですか。
+  \Rospeaks これも服です。
+  \Kospeaks 本はどれですか。
+  \Rospeaks 本はあれです。
+  \Kospeaks では、案内します。
+  \Rospeaks お願いします。
+\end{dialogue}
+
+\subsection*{単語}
+
+はじめまして、\ruby{前|文}{ぜん|ぶん}、\ruby{魯}{ろ}、\ruby{あなた}{貴方}、\ruby{李}{り}、\ruby{あの|人}{|ひと}、\ruby{顧}{こ}、\ruby{日|本|語|科}{に|ほん|ご|か}、\ruby{一|年}{いち|ねん}、\ruby{二|年}{に|ねん}
 \end{document}
 
 % Local Variables:
