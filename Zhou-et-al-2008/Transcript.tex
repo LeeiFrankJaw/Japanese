@@ -12,11 +12,12 @@
 
 \usepackage{setspace}
 \usepackage{enumitem}
-\newlist{dialogue}{itemize}{1}
-\setlist[dialogue]{label={},align=left,leftmargin=*,labelsep=\zw,nosep}
+\newlist{dialogue}{description}{1}
+\setlist[dialogue]{font=\normalfont,labelsep=\zw,labelwidth=2\zw,leftmargin=!,nosep}
 \newcommand*{\Rospeaks}{\item[魯]}
 \newcommand*{\Lispeaks}{\item[李]}
 \newcommand*{\Kospeaks}{\item[顧]}
+\newcommand*{\Kimuraspeaks}{\item[木村]}
 
 \begin{document}
 \maketitle
@@ -131,7 +132,7 @@
 
 \subsection*{会話}
 
-\begin{dialogue}
+\begin{dialogue}[labelwidth=\zw]
   \Lispeaks すみません。あなたは魯さんですか。
   \Rospeaks はい、私は日本語科一年の魯です。あなたはどなたですか。
   \Lispeaks 私は日本語科二年の李です。
@@ -186,7 +187,7 @@
 
 \subsection*{会話}
 
-\begin{dialogue}
+\begin{dialogue}[labelwidth=\zw]
   \Lispeaks 魯さん、あなたの部屋は二階にあります。
   \Rospeaks そうですが。部屋に\ruby{何}{なに}がありますか。
   \Lispeaks 部屋に机や椅子などがあります。
@@ -238,7 +239,7 @@
 
 \subsection*{会話}
 
-\begin{dialogue}
+\begin{dialogue}[labelwidth=\zw]
   \Lispeaks 魯さん、これから大学\textgt{へ}案内します。
   \Rospeaks そうです\textgt{か}。わざわざどうもありがとうございます。
   \Lispeaks ここは大学の正門です。
@@ -298,7 +299,7 @@
 
 \subsection*{会話}
 
-\begin{dialogue}
+\begin{dialogue}[labelwidth=\zw]
   \Lispeaks 魯さん、これから大学のキャンパスへ案内します。
   \Rospeaks そうですか。わざわざどうもありがとうございます。
   \Lispeaks このあたりは学園都市です。
@@ -352,7 +353,7 @@
 
 \subsection*{会話}
 
-\begin{dialogue}
+\begin{dialogue}[labelwidth=\zw]
   \Lispeaks 魯さん、こんにちは。
   \Rospeaks こんにちは。
   \Lispeaks お元気ですか。
@@ -411,7 +412,7 @@
 
 \subsection*{会話}
 
-\begin{dialogue}
+\begin{dialogue}[labelwidth=\zw]
   \Lispeaks 魯さん、こんにちは。
   \Rospeaks こんにちは。
   \Lispeaks お元気ですか。
@@ -457,7 +458,58 @@
 
 \subsection*{会話}
 
-
+\begin{dialogue}
+  \Kimuraspeaks おはようございます。
+  \Lispeaks おはようございます。
+  \Kimuraspeaks 李さんはよく運動場へ\textgt{来}ますか。
+  \Lispeaks はい、よく運動場へ来ます。すみません、今何時ですか。
+  \Kimuraspeaks 今六時四十分です。李さんは毎朝、何時に起きますか。
+  \Lispeaks 毎朝六時に起きます。それから洗面所で\textgt{歯を磨きま}。顔を洗います。
+  \Kimuraspeaks 毎朝どんな運動をしますか。
+  \Lispeaks バスケットボールやラジオ体操などをします。木村さんは。
+  \Kimuraspeaks 私はバドミントンやテニスなどをします。李さんは毎朝、日本語の朗読をしますか。
+  \Lispeaks はい、します。木村さんは中国語の朗読をしますか。
+  \Kimuraspeaks はい、私もします。李さんは何時ごろ、朝ご飯を食べますか。
+  \Lispeaks 七時半ごろ食べます。
+  \Kimuraspeaks どこで食べますか。
+  \Lispeaks 学生の食堂で食べます。
+  \Kimuraspeaks 何を食べますか。
+  \Lispeaks うどんや肉饅頭を食べます。
+  \Kimuraspeaks パンを食べますか。
+  \Lispeaks いいえ、パンはあまり食べません。
+  \Kimuraspeaks 何時ごろ教室へ行きますか。
+  \Lispeaks 七時四十分ごろ教室へ行きます。
+  \Kimuraspeaks 自転車で行きますか。
+  \Lispeaks はい、自転車で行きます。
+  \Kimuraspeaks \textgt{授業}は何時から何時までですか。
+  \Lispeaks 午前は八時から十一時四十分までで、午後は一時四十分から三時二十分までです。
+  \Kimuraspeaks どんな授業ですか。
+  \Lispeaks 午前は日本語の授業で、午後は中国語や体育の授業です。
+  \Kimuraspeaks 日本語の授業は\textgt{週}に何時間ありますか。
+  \Lispeaks 日本語の授業は週に十二時間です。
+  \Kimuraspeaks 一日に何時間ですか。
+  \Lispeaks 一日に二時間です。
+  \Kimuraspeaks 何時から\textgt{始}まりますか。
+  \Lispeaks 八時から始まります。
+  \Kimuraspeaks 何時に\textgt{終}わりますか。
+  \Lispeaks 九時四十分に終わります。
+  \Kimuraspeaks 李さんは日本語の放送を聞きますか。
+  \Lispeaks はい、時々聞きます。
+  \Kimuraspeaks テレビも見ますか。
+  \Lispeaks いいえ、テレビ\textgt{は}あまり見ません。
+  \Kimuraspeaks 日本語の新聞を読みますか。
+  \Lispeaks はい、時々読みます。
+  \Kimuraspeaks 李さんは毎晩、何時から何時まで勉強しますか。
+  \Lispeaks 毎晩、七時から九時半まで勉強します。
+  \Kimuraspeaks 何時ごろ寮へ帰りますか。
+  \Lispeaks 十時ごろ帰ります。
+  \Kimuraspeaks 大学から寮までどのくらいかかりますか。
+  \Lispeaks 十分ぐらいかかります。
+  \Kimuraspeaks 何時ごろ寝ますか。
+  \Lispeaks 十時半ごろ寝ます。
+  \Kimuraspeaks 大学の生活は忙しいですね。
+  \Lispeaks ええ、とても忙しいです。しかし、大変楽しいです。
+\end{dialogue}
 
 \end{document}
 
