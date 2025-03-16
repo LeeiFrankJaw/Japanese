@@ -1,0 +1,193 @@
+\documentclass[a5j]{ltjarticle}
+
+% For “『』” usage, see
+% https://ja.wikipedia.org/wiki/%E6%8B%AC%E5%BC%A7#%E5%90%8D%E7%A7%B0%E3%81%AE%E6%8F%90%E7%A4%BA.
+\newcommand*{\titleContent}{『\ruby{基|礎}{き|そ}日本語１』の\ruby{文|字|起|こし}{も|じ|お|}}
+\newcommand*{\authorContent}{趙磊}
+
+\title{\titleContent}
+\author{\authorContent}
+
+\usepackage{luatexja-ruby}
+
+\usepackage{enumitem}
+\newlist{dialogue}{description}{1}
+\setlist[dialogue]{font=\normalfont,align=right,labelsep=.5\zw,labelwidth=2\zw,leftmargin=!,nosep}
+
+% For “：” usage, see https://kotonoha-sha.jp/mojiokoshi/sample/ and
+% https://satomasaki.com/column/manner-of-speaking/6809/.
+\newcommand*{\YamadaSpeaks}{\item[山田：]}
+\newcommand*{\ZhangSpeaks}{\item[張：]}
+\newcommand*{\TanakaSpeaks}{\item[田中：]}
+
+\usepackage[pagestyles]{titlesec}
+
+\titleformat{\section}[hang]{\normalfont\Large\bfseries}{第\kansuji\value{section}課}{\zw}{}
+
+\ltjsetparameter{kansujichar={0,`０}}
+\ltjsetparameter{kansujichar={1,`１}}
+\ltjsetparameter{kansujichar={2,`２}}
+\ltjsetparameter{kansujichar={3,`３}}
+\ltjsetparameter{kansujichar={4,`４}}
+\ltjsetparameter{kansujichar={5,`５}}
+\ltjsetparameter{kansujichar={6,`６}}
+\ltjsetparameter{kansujichar={7,`７}}
+\ltjsetparameter{kansujichar={8,`９}}
+\ltjsetparameter{kansujichar={9,`９}}
+
+\begin{document}
+\maketitle
+
+\section{どうぞよろしく}
+
+\subsection*{本文}
+
+\begin{dialogue}[labelwidth=\zw]
+\item[A] 私は田中です。どうぞよろしく。
+\item[B] 私は張です。どうぞよろしく。
+\item
+\item[A] これは何ですか。
+\item[B] それはラジオです。
+\item[A] それは何ですか。
+\item[B] これはパソコンです。
+\item[A] あれは何ですか。
+\item[B] あれは雑誌です。
+\item[A] あれは日本の雑誌ですか。
+\item[B] はい、そうです。
+\item[A] どれがラジカセですか。
+\item[B] あれがラジカセです。\\
+  あれは私のではありません。友達のです。
+\item
+\item[A] あの人は誰ですか。
+\item[B] どの人ですか。
+\item[A] あの女の人です。
+\item[B] あの人は山田さんです。\\
+  山田さんは東南大学の留学生です。\\
+  山田さんは中国人ではありません。日本人です。
+\item[A] 田中さんは誰ですか。
+\item[B] 田中さんはこの人です。
+\item[A] どなたが先生ですか。
+\item[B] その男の人が先生です。
+\end{dialogue}
+
+\subsection*{会話（１）}
+
+\begin{dialogue}
+  \YamadaSpeaks
+  はじめまして。
+  \ZhangSpeaks
+  はじめまして。
+  \YamadaSpeaks
+  山田です。
+  \ZhangSpeaks
+  張です。
+  \YamadaSpeaks
+  よろしくお願いします。
+  \ZhangSpeaks
+  こちらこそどうぞよろしくお願いします。
+\end{dialogue}
+
+\subsection*{会話（２）}
+
+\begin{dialogue}
+  \YamadaSpeaks
+  張さん、こちらは田中さんです。\\
+  私の友達です。
+  \TanakaSpeaks
+  田中です。どうぞよろしく。
+  \YamadaSpeaks
+  こちらは張です。\\
+  張さんも私の友達です。
+  \ZhangSpeaks
+  張です。どうぞよろしく。\\
+  田中さんは会社員ですか。
+  \TanakaSpeaks
+  いいえ、そうではありません。\\
+  私は留学生です。東南大学の留学生です。\\
+  張さんは？
+  \ZhangSpeaks
+  私も東南大学の学生です。\\
+  日本語科の一年生です。どうぞよろしく。
+\end{dialogue}
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\section{}
+
+
+
+\end{document}
+
+% Local Variables:
+% TeX-engine: luatex
+% End:
