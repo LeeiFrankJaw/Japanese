@@ -9,16 +9,18 @@
 \author{\authorContent}
 
 \usepackage{luatexja-ruby}
+\ltjsetruby{stretch=101}
 
 \usepackage{enumitem}
 \newlist{dialogue}{description}{1}
-\setlist[dialogue]{font=\normalfont,align=right,labelsep=.5\zw,labelwidth=2\zw,leftmargin=!,nosep}
+\setlist[dialogue]{font=\normalfont,align=right,labelsep=.5\zw,labelwidth=2.75\zw,leftmargin=!,nosep}
 
 % For “：” usage, see https://kotonoha-sha.jp/mojiokoshi/sample/ and
 % https://satomasaki.com/column/manner-of-speaking/6809/.
 \newcommand*{\YamadaSpeaks}{\item[山田：]}
 \newcommand*{\ZhangSpeaks}{\item[張：]}
 \newcommand*{\TanakaSpeaks}{\item[田中：]}
+\newcommand*{\LiSpeaks}{\item[李：]}
 
 \usepackage[pagestyles]{titlesec}
 
@@ -32,7 +34,7 @@
 \ltjsetparameter{kansujichar={5,`５}}
 \ltjsetparameter{kansujichar={6,`６}}
 \ltjsetparameter{kansujichar={7,`７}}
-\ltjsetparameter{kansujichar={8,`９}}
+\ltjsetparameter{kansujichar={8,`８}}
 \ltjsetparameter{kansujichar={9,`９}}
 
 \begin{document}
@@ -104,15 +106,62 @@
   \TanakaSpeaks
   いいえ、そうではありません。\\
   私は留学生です。東南大学の留学生です。\\
+  % For “？” usage, see
+  % https://www.bunka.go.jp/seisaku/bunkashingikai/kokugo/hokoku/pdf/93650001_02.pdf.
   張さんは？
   \ZhangSpeaks
   私も東南大学の学生です。\\
   日本語科の一年生です。どうぞよろしく。
 \end{dialogue}
 
-\section{}
+\section{ここは私の部屋です}
 
+\subsection*{本文}
 
+ここは寮です。そこは食堂です。あそこは教室です。ここは私の部屋です。部屋に机があります。机の上に\ruby{かばん}{鞄}と電話があります。机の前に椅子があります。椅子の下に猫がいます。私の猫です。名前は白です。
+
+\subsection*{会話（１）}
+
+\begin{dialogue}
+  \TanakaSpeaks
+  かばんの中に何がありますか。
+  \LiSpeaks
+  本と\textbf{ボールペン}があります。
+  \TanakaSpeaks
+  部屋にはベッドがありますか。
+  \LiSpeaks
+  はい、ベッドがあります。
+  \TanakaSpeaks
+  服はどこにありますか。
+  \LiSpeaks
+  服は\textbf{たんす}にあります。
+  \TanakaSpeaks
+  たんすはどこですか。
+  \LiSpeaks
+  ドアの後ろです。
+  \TanakaSpeaks
+  % For りんご・リンゴ・林檎・苹果, see
+  % https://www.ringodaigaku.com/play/ichiki/index_5.html and
+  % https://www.ringodaigaku.com/ringo_blog/blog/2023/12/08/14427.html.
+  \textbf{引き出し}の中にりんごやみかんやバナナなどもありますね。\\
+  りんごはいくつありますか。
+  \LiSpeaks
+  一つ、二つ、三つ、四つ、五つ、六つ、七つ、八つ、九つ、\ruby{十}{とお}、十一、りんごは十一あります。
+  \TanakaSpeaks
+  みかんはいくつありますか。
+  \LiSpeaks
+  一、二、三、四、五、六、\ruby{七}{なな}、八、九、\ruby{十}{じゅう}、十一、十二、十三、\ruby{十|四}{|よん}、十五、十六、\ruby{十|七}{|しち}、十八、\ruby{十|九}{|きゅう}、二十、二十一、みかんは二十一あります。\\
+  一つどうですか。
+  \TanakaSpeaks
+  ありがとうございます。\\
+  バナナは\ruby{何|本}{|ぼん}ありますか。
+  \LiSpeaks
+  バナナは一本\ruby{だけ}{丈}です。
+  \TanakaSpeaks
+  \ruby{梨}{なし}もありますか。
+  \LiSpeaks
+  いいえ、梨はありません。
+\end{dialogue}
 
 \section{}
 
