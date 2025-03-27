@@ -24,18 +24,19 @@
 
 \usepackage[pagestyles]{titlesec}
 
-\titleformat{\section}[hang]{\normalfont\Large\bfseries}{第\kansuji\value{section}課}{\zw}{}
+\titleformat{\section}[hang]{\normalfont\Large\bfseries}{第\thesection 課}{\zw}{}
+% \titleformat{\section}[hang]{\normalfont\Large\bfseries}{第\kansuji\value{section}課}{\zw}{}
 
-\ltjsetparameter{kansujichar={0,`０}}
-\ltjsetparameter{kansujichar={1,`１}}
-\ltjsetparameter{kansujichar={2,`２}}
-\ltjsetparameter{kansujichar={3,`３}}
-\ltjsetparameter{kansujichar={4,`４}}
-\ltjsetparameter{kansujichar={5,`５}}
-\ltjsetparameter{kansujichar={6,`６}}
-\ltjsetparameter{kansujichar={7,`７}}
-\ltjsetparameter{kansujichar={8,`８}}
-\ltjsetparameter{kansujichar={9,`９}}
+% \ltjsetparameter{kansujichar={0,`０}}
+% \ltjsetparameter{kansujichar={1,`１}}
+% \ltjsetparameter{kansujichar={2,`２}}
+% \ltjsetparameter{kansujichar={3,`３}}
+% \ltjsetparameter{kansujichar={4,`４}}
+% \ltjsetparameter{kansujichar={5,`５}}
+% \ltjsetparameter{kansujichar={6,`６}}
+% \ltjsetparameter{kansujichar={7,`７}}
+% \ltjsetparameter{kansujichar={8,`８}}
+% \ltjsetparameter{kansujichar={9,`９}}
 
 \begin{document}
 \maketitle
@@ -161,7 +162,9 @@
   一つどうですか。
   \TanakaSpeaks
   ありがとうございます。\\
-  % See https://ja.hinative.com/questions/10173748.
+  % See https://ja.hinative.com/questions/10173748,
+  % https://japanese.stackexchange.com/q/70722/48074, and
+  % https://www.tofugu.com/japanese/japanese-counter-hon/.
   バナナは\ruby{何|本}{|ぼん}ありますか。
   \LiSpeaks
   バナナは一本\ruby{だけ}{丈}です。
@@ -210,11 +213,11 @@
 
 \subsection*{本文}
 
-山田さんは毎朝６時に起きます。６時半に朝ご飯を食べます。午前８時から午後５時まで学校で勉強します。
+山田さんは毎朝6時に起きます。6時半に朝ご飯を食べます。午前8時から午後5時まで学校で勉強します。
 
-午後の５時から７時まで２時間アルバイトをします。１０時半から三十分間\textbf{ジョギング}をします。１１時寝ます。
+午後の5時から7時まで2時間アルバイトをします。10時半から三十分間\textbf{ジョギング}をします。11時\textbf{に}寝ます。
 
-９月９日は山田さんの誕生日でした。その日は月曜日です。学校は休みではありませんでした。
+9月9日は山田さんの誕生日でした。その日は月曜日です。学校は休みではありませんでした。
 
 \subsection*{会話（１）}
 
@@ -230,17 +233,17 @@
   \ZhangSpeaks
   今日は何月何日ですか。
   \YamadaSpeaks
-  今日は９月１０日です。昨日は９月９日でした。
+  今日は9月10日です。昨日は9月9日でした。
   \ZhangSpeaks
   何か\textbf{特別な日}でしたか。
   \YamadaSpeaks
   私の誕生日でした。張さんの誕生日はいつですか。
   \ZhangSpeaks
-  ８月２０日です。
+  8月20日です。
   \YamadaSpeaks
   今何時ですか。
   \ZhangSpeaks
-  今９時５５分です。１０時５分前です。
+  今9時55分です。10時5分前です。
 \end{dialogue}
 
 \subsection*{会話（２）}
@@ -253,9 +256,9 @@
   \YamadaSpeaks
   今日の授業は何時からですか。
   \ZhangSpeaks
-  ８時からです。山田さんは？
+  8時からです。山田さんは？
   \YamadaSpeaks
-  私も８時からです。午後の４時まで学校にいます。
+  私も8時からです。午後の4時まで学校にいます。
   \ZhangSpeaks
   その後、何をしましたか。
   \YamadaSpeaks
@@ -263,13 +266,13 @@
   \ZhangSpeaks
   ええ、どんなアルバイトですか。
   \YamadaSpeaks
-  ２時間日本語の会話の\textbf{教師}をします。
+  2時間日本語の会話の\textbf{教師}をします。
   \ZhangSpeaks
   それは大変ですね。
   \YamadaSpeaks
   張さんは学校の後、何をしましたか。
   \ZhangSpeaks
-  図書館で勉強します。それから３０分間ジョギングをします。１１時\textbf{に}寝ます。
+  図書館で勉強します。それから30分間ジョギングをします。11時\textbf{に}寝ます。
   \YamadaSpeaks
   それはいいですね。\\
   私も一緒にジョギングをしましょうか。
@@ -282,6 +285,8 @@
   % https://ja.hinative.com/questions/17176365.
   またね。
 \end{dialogue}
+
+% https://hinative.com/questions/21372677
 
 \section{}
 
